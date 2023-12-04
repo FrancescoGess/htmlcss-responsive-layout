@@ -1,0 +1,560 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family:'Segoe UI', sans-serif
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  p{
+    line-height: 1.8rem;
+  }
+  
+  img{
+    width: 100%;
+  }
+  
+  h3{
+    font-size: 2rem;
+  }
+  
+  h4{
+    color: #0084FD;
+    font-size: 1.4rem;
+  }
+  
+  h5{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin: 40px 0px;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  .container{
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+ 
+  .card{
+    width: 100%;
+    border-radius: 18px;
+    margin: 25px 0;
+    padding: 40px 30px;
+  }
+  
+  .group-cards.enhanced .card, .card.enhanced{
+    border-radius: 48px;
+  }
+  
+  .group-cards.back-blue .card, .card.back-blue{
+    background-color: #B5DDFF;
+  }
+  
+  .group-cards.back-violet .card, .card.back-violet{
+    background-color: #9792E4;
+  }
+  
+  .group-cards.back-white .card, .card.back-white{
+    background-color: white;
+  }
+
+  .button{
+    border-radius: 50px;
+    background-color: #9792E4;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .button a{
+    font-weight: bold;
+  }
+  
+  .button.spacing a{
+    letter-spacing: 3px;
+  }
+  
+  .button.circular{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    line-height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .button:hover{
+    background-color: #aeabe2;
+  }
+  
+  .button.back-blue{
+    background-color: #0084FD;
+  }
+  
+  .button.back-blue:hover{
+    background-color: #369eff;
+  }
+  
+  .button.back-white{
+    background-color: white;
+  }
+  
+  .button.back-white:hover{
+    background-color: rgb(236, 236, 236);
+  }
+
+  .round{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  
+  /* UTILITIES */
+  
+  .d-flex{
+    display: flex;
+  }
+  
+  .t-center{
+    text-align: center;
+  }
+  
+  .color-white{
+    color: white;
+  }
+  
+  /* HEADER */
+  
+  header{
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    z-index: 999;
+    background-color: #0084FD;
+  }
+  
+  header .container{
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .menu-short{
+    color: white;
+    font-size: 1.4rem;
+  }
+  
+  nav .menu{
+    display: none;
+  }
+  
+  /* MAIN */
+  
+  main{
+    padding-top: 75px;
+  }
+  
+  section{
+    padding: 25px 0 50px;
+  }
+  
+  section:nth-of-type(even){
+    background-color: #9792E4;
+  }
+  
+  .demo-application .card p{
+    font-weight: bold;
+    color: #5A6E7F;
+  }
+  
+  .demo-application .card:first-of-type{
+    padding-bottom: 0;
+  }
+  
+  .demo-application .card:first-of-type .button{
+    margin: 40px 0;
+    max-width: 220px;
+  }
+  
+  .demo-application .card:first-of-type .button i{
+    padding-right: 10px;
+  }
+  
+  .demo-application .card:first-of-type img{
+    transform: translateY(4px);
+  }
+  
+  .demo-application .card h4{
+    margin-bottom: 40px;
+  }
+  
+  .demo-application .card .logo-card i{
+    color: #0084FD;
+    font-size: 5rem;
+    padding-bottom: 30px;
+  }
+  
+  /* >>> STRATEGIC PLANNING */
+  .strategic-planning h3{
+    margin: 60px 0;
+  }
+  
+  .strategic-planning .card img{
+    margin: 30px 0;
+  }
+  
+  .strategic-planning .card h4{
+    color: black;
+    margin-bottom: 18px;
+  }
+  
+  .strategic-planning .card p{
+    color: black;
+    font-style: italic;
+    margin-bottom: 40px;
+  }
+  
+  .strategic-planning .card .button a{
+    color: black;
+  }
+  
+  /* >>> TESTIMONIALS */
+  .testimonials h3{
+    color: #9792E4;
+    margin: 0px 0px 50px;
+  }
+  
+  .testimonials p{
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  
+  .testimonials .card p{
+    padding-top: 12px;
+    margin-bottom: 30px;
+  }
+  
+  .testimonials .card span{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* >>> BENEFITS */
+  .benefits .container > h3{
+    margin: 50px 0px 70px;
+  }
+  
+  .benefits .card h3, .benefits .card h4{
+    color: #9792E4;
+  }
+  
+  .benefits .card h3{
+    font-size: 3.5rem;
+    margin: 0;
+  }
+  
+  .benefits .card h4{
+    font-size: 1.5rem;
+    margin: 20px 0px 25px;
+  }
+  
+  .benefits .card p{
+    color: grey;
+    margin-bottom: 30px;
+  }
+  
+  .benefits .card .button{
+    max-width: 150px;
+  }
+  
+  /* >>> ABOUT US */
+  .about-us .container{
+    padding-bottom: 40px;
+  }
+  
+  .about-us h2{
+    color: #9792E4;
+    font-size: 2.8rem;
+    margin-top: 65px;
+  }
+  
+  .about-us p{
+    margin-top: 60px;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+  
+  .about-us .box{
+    margin-top: 40px;
+  }
+  
+  .about-us .box .container-round-img{
+    width: fit-content;
+    position: relative;
+  }
+  
+  .about-us .box .container-round-img i{
+    color: #9792E4;
+    font-size: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .about-us .box h3{
+    color: #9792E4;
+    margin: 20px 0px;
+  }
+  
+  .about-us .box .button{
+    max-width: 210px;
+    padding: 8px 0px;
+  }
+  
+  .about-us .box .button a{
+    font-weight: normal;
+  }
+  
+  .about-us .box .button a i{
+    padding-right: 5px;
+  }
+  
+  .get-started h5{
+    color: lightgrey;
+    margin-bottom: 20px;
+  }
+  
+  .get-started h3{
+    margin: 0px;
+  }
+  
+  .get-started h2{
+    color: #FDC15F;
+    font-size: 3.8rem;
+    margin: 20px 0px;
+  }
+  
+  .get-started .button{
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 270px;
+  }
+  
+  .get-started .button a{
+    color: #9792E4;
+  }
+  
+  .get-started span a{
+    text-decoration: underline;
+  }
+  
+  /* FOOTER */
+  
+  footer{
+    min-height: 225px;
+    background-color: #333333;
+    padding: 40px 0;
+  }
+  
+  footer p{
+    line-height: normal;
+  }
+  
+  footer p:first-of-type{
+    margin-bottom: 50px;
+  }
+  
+  footer a{
+    color: #9792E4;
+    text-decoration: underline;
+  }
+  
+  /* MEDIA RESPONSIVE */
+  
+  @media screen and (min-width: 768px) {
+    
+    .demo-application .group-cards{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .demo-application .group-cards .card{
+      width: calc(100%/3 - 20px);
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .demo-application .group-cards .card:first-of-type{
+      width: calc(100%/3*2 - 10px);
+    }
+  
+    .demo-application .group-cards .card:first-of-type img{
+      width: 60%;
+    }
+  
+    .strategic-planning h3{
+      font-size: 3.5rem;
+    }
+  
+    .testimonials .card{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .testimonials .card .card-text{
+      text-align: left;
+      padding-left: 30px;
+    }
+  
+    .benefits h3{
+      font-size: 2.7rem;
+    }
+  
+    .benefits .group-cards{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .benefits .group-cards .card{
+      width: calc(100%/2 - 20px);
+    }
+  
+    .about-us .container{
+      display: flex;
+    }
+  
+    .about-us .container-text{
+      width: 55%;
+    }
+  
+    .about-us .box{
+      width: 45%;
+      margin-top: 65px;
+      padding-left: 60px;
+    }  
+  
+    .get-started .container{
+      width: 70%;
+    }
+  
+    .get-started h3{
+      font-size: 2.5rem;
+    }
+  
+    .get-started p{
+      padding: 0px 50px;
+    }
+  
+    footer .container{
+      width: 60%;
+    }
+  
+  }
+  
+  @media screen and (min-width: 1200px){
+  
+    .container{
+      max-width: 1140px;
+    }
+  
+    header nav .menu-short{
+      display: none;
+    }
+  
+    header nav .menu{
+      display: block;
+    }
+  
+    nav .menu ul li{
+      display: inline-block;
+      padding: 0px 20px;
+    }
+  
+    nav .menu ul li .button a{
+      color: black;
+    }
+  
+    nav .menu ul li a:hover{
+      text-decoration: underline;
+    }
+  
+    .demo-application .card:first-of-type{
+      display: flex;
+    }
+  
+    .demo-application .card:first-of-type .box-text{
+      width: 50%;
+    }
+  
+    .demo-application .card:first-of-type img{
+      padding: 0px 50px;
+    }
+  
+    .strategic-planning .container{
+      max-width: 900px;
+      display: flex;
+      align-items: flex-end;
+    }
+    
+    .strategic-planning .container .container-text{
+      padding-right: 100px;
+      margin-top: 100px;
+    }
+  
+    .strategic-planning .container .container-text h3{
+      font-size: 2.5rem;
+    }
+  
+    .strategic-planning .container .card{
+      margin-bottom: 0px;
+    }
+  
+    .strategic-planning .container .card img{
+      max-width: 225px;
+    }
+  
+    .testimonials h3{
+      font-size: 2.5rem;
+    }
+  
+    .benefits .group-cards .card{
+      width: calc(100%/3 - 20px);
+    }
+  
+    .about-us .container-text{
+      width: 70%;
+    }
+  
+    .about-us .box{
+      width: 30%;
+      margin-top: 65px;
+      padding-left: 60px;
+    }
+  
+    .get-started .container{
+      width: 30%;
+    }
+  
+    footer .container{
+      width: 25%;
+    }
+  
+  }
